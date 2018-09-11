@@ -2,12 +2,12 @@ import UIKit
 
 // 1 задание
 
-var a: Int =  3 //коэффициент a (x^2), если нет, то вводим 0
-var b: Int =  0 //коэффициент b (x), если нет, то вводим 0
-var c: Int =  2 //коэффициент c (число), если нет, то вводим 0
-var d: Int = 0 //дискриминант
-var x1: Int = 0
-var x2: Int = 0
+var a: Double =  2 //коэффициент a (x^2), если нет, то вводим 0
+var b: Double =  5 //коэффициент b (x), если нет, то вводим 0
+var c: Double =  2 //коэффициент c (число), если нет, то вводим 0
+var d: Double = 0 //дискриминант
+var x1: Double = 0
+var x2: Double = 0
 
 if(a == 0){
     print("Уравнение не имеет корней")
@@ -21,8 +21,8 @@ if(a == 0){
         x1 = -b / 2 * a
         print("x = ",x1)
     }else{
-        x1 = -b + Int(sqrt(Double(d))) / 2 * a
-        x2 = -b - Int(sqrt(Double(d))) / 2 * a
+        x1 = -b + sqrt(Double(d)) / 2 * a
+        x2 = -b - sqrt(Double(d)) / 2 * a
         print(" x1 =",x1,"\n","x2 =",x2)
     }
 }
@@ -43,14 +43,15 @@ print("Площадь = ",S)
 
 // 3 задание
 
-var Vklad: Int = 5000
-var Procent: Int = 10
+var Vklad: Double = 100
+var Procent: Double = 10
 var Srok: Int = 5
-var Sum: Int = 0
+var Sum: Double = Vklad
 var i: Int = 0
 
 while (i<Srok) {
-    Sum = Vklad + Vklad*Procent
+    Sum = Sum + Sum/100*Procent
     i = i + 1
 }
-print(" Срок вклада:",Srok,"\n","Сумма:",Sum)
+
+print(" Срок вклада:",Srok,"лет\n","Сумма:",Sum)
