@@ -62,7 +62,7 @@ var truck1 =  Truck(brand: "KAMAZ", year: 2010, trunckAction: .noact, trunckVolu
 car1.engineStatus = .off
 car1.NewTrunckVolume(trunckAction: .load, newValue: 1500)
 car2.NewTrunckVolume(trunckAction: .unload, newValue: 100)
-truck1.NewTrunckVolume(trunckAction: .load, newValue: 5000)
+truck1.NewTrunckVolume(trunckAction: .load, newValue: 15000)
 truck1.NewTrunckVolume(trunckAction: .unload, newValue: 2000)
 
 print("Информация о первой машине: Марка \(car1.brand), год выпуска \(car1.year), статус двигателя \(car1.engineStatus), статус окон \(car1.windowStatus), занято обьема багажника \(car1.trunckVolumeFilled) из \(car1.trunckVolume)")
@@ -74,5 +74,4 @@ print("Информация о первом грузовике: Марка \(tru
 //Проверка функции погрузки/разгрузки
 
 //car1.NewTrunckVolume(trunckAction: .unload, newValue: 1000)
-//
 //print("Информация о первой машине: Марка \(car1.brand), год выпуска \(car1.year), статус двигателя \(car1.engineStatus), статус окон \(car1.windowStatus), занято обьема багажника \(car1.trunckVolumeFilled) из \(car1.trunckVolume)")
