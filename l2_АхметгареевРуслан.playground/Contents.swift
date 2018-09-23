@@ -49,9 +49,9 @@ print("Массив из нечетных и делящихся на 3 без о
 
 // 5 задание есть вопросы к реализации
 
-var fiboArray: [Int] = [0, 1] //числа фибоначчи начинаются с 0, 1
+var fiboArray: [Decimal] = [0, 1] //числа фибоначчи начинаются с 0, 1
 
-func Fibonachi (fiboArray: [Int], fibo: Int = fiboArray[fiboArray.endIndex - 2] &+ fiboArray[fiboArray.endIndex - 1] ) -> Int { //считает след. число
+func Fibonachi (fiboArray: [Decimal], fibo: Decimal = fiboArray[fiboArray.endIndex - 2] + fiboArray[fiboArray.endIndex - 1] ) -> Decimal { //считает след. число
     return fibo
 }
 
